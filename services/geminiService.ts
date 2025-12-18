@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 import { UserInput, StoryboardData } from '../types';
 
@@ -119,7 +118,7 @@ const responseSchema = {
 
 
 export const generateStoryboardAndAssets = async (userInput: UserInput): Promise<StoryboardData> => {
-  const { plot, storyLength, shotDuration, genre, cameraStyle, characterStyle } = userInput;
+  const { plot, storyLength, storyDuration, shotDuration, genre, cameraStyle, characterStyle } = userInput;
 
   const lengthSeconds = storyLength === '15초' ? 15 : storyLength === '30초' ? 30 : 60;
   const durationSeconds = parseInt(shotDuration);
