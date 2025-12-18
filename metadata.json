@@ -1,0 +1,5 @@
+{
+  "name": "망고 릴스 영상 스토리보드 생성기",
+  "description": "An application that generates a storyboard, character/location/prop prompts, and a shot list from a user-provided topic or plot. Users can select story length and shot duration to customize the output.",
+  "requestFramePermissions": []
+}
