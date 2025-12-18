@@ -2,9 +2,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { UserInput, StoryboardData } from '../types';
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 if (!API_KEY) {
-    throw new Error("API_KEY environment variable is not set");
+    throw new Error("VITE_GEMINI_API_KEY environment variable is not set");
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
