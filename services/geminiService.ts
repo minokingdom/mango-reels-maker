@@ -157,7 +157,7 @@ export const generateStoryboardAndAssets = async (userInput: UserInput): Promise
   
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-pro-preview",
+      model: "gemini-2.0-flash-exp",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
